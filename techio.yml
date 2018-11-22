@@ -1,11 +1,13 @@
-title : Java Maven Project
-
-# Table of content
+title: Hibernate Native SQL
+#cover: /playgrounds/cover.png
 plan:
-  - title: Welcome # Set the page title (only displayed if your contribution has several pages)
-    statement: markdowns/welcome.md # Set the file path to the page content
-#  - title: Another Page
-#    statement: markdowns/another-page.md
+- title: Lazy and Eager loading
+  description: Lazy and Eager loading
+  plan:
+  - title: What is eager and lazy loading?
+    statement: markdowns/eagerLazy.md
+  - title: Fetch graph and Load graph
+    statement: markdowns/graph.md
 
 
 # Settings for your programming projects and the associated Docker images
