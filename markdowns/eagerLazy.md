@@ -9,16 +9,16 @@
 
 ## Advantages and disadvantages of Eager and Lazy loading
 
-**1**	Lazy Loading
-####Advantages:
+**1**	Lazy Loading<br>
+####Advantages:<br>
 *	Initial load time much smaller than in the other approach
-*	Less memory consumption than in the other approach
-####Disadvantages:
+*	Less memory consumption than in the other approach<br>
+####Disadvantages:<br>
 *	Delayed initialization might impact performance during unwanted moments
-*	In some cases you need to handle lazily-initialized objects with a special care or you might end up with an exception(LazyInitializationException)
-**2**		Eager Loading:
-####Advantages:
+*	In some cases you need to handle lazily-initialized objects with a special care or you might end up with an exception(LazyInitializationException)<br>
+**2**		Eager Loading:<br>
+####Advantages:<br>
 *	No delayed initialization related performance impacts
-####Disadvantages:
+####Disadvantages:<br>
 *	Long initial loading time
 *	Loading too much unnecessary data might impact performance
