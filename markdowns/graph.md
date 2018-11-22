@@ -16,13 +16,13 @@ Use an entity graph as a fetch or a load graph.
 *	The usage of @NamedSubgraph annotation defines an entity graph for sub-entities within the given entity and their own attributeNodes to define the loading technique for the sub-entity.
 *	Sample as below
 
-@[A quick sample of Fetch Graph. Check out the JAVA class and SQL file]({"stubs": ["src/main/java/com/tu/entity/User.java","src/main/java/com/tu/entity/UserRepository.java","src/test/resources/schema.sql"], "command": "com.tu.entity.EntityGraphTests#testLazyEagerLoading"})
+@[A quick sample of Fetch Graph. Check out the JAVA class and SQL file]({"stubs": ["src/main/java/com/tu/entity/User.java","src/main/java/com/tu/entity/UserRepository.java","src/test/resources/schema.sql"], "command": "com.tu.entity.EntityGraphTests#testFetchGraph"})
 
 *	In this example, we have defined a namedEntiyGraph with attribute as Team. We have also defined a region subgraph, which denotes the region entity within the Team entity would be eligible for the entityGraph.
 *	Now, to define fetch or load graph, we specify the name of the entity graph used (here it’s user-with-team) with the @entity
 *	Now, when we load the User entity with the findOneByUserId method(click on RUN button), only Team entity, region entity within the Team would be loaded eagerly. All other attributes would be loaded lazily. (Check out Query fired in the output logs)
 
-@[A quick sample of Load Graph. Check out the JAVA class and SQL file]({"stubs": ["src/main/java/com/tu/entity/User.java","src/main/java/com/tu/entity/UserRepository.java","src/test/resources/schema.sql"], "command": "com.tu.entity.EntityGraphTests#testLazyEagerLoading"})
+@[A quick sample of Load Graph. Check out the JAVA class and SQL file]({"stubs": ["src/main/java/com/tu/entity/User.java","src/main/java/com/tu/entity/UserRepository.java","src/test/resources/schema.sql"], "command": "com.tu.entity.EntityGraphTests#testLoadGraph"})
 
 *	Now, when we load the User entity with the readOneByUserId method, only Team entity, region entity within the Team would be loaded eagerly. All other attributes would be loaded lazily
 *	In the case of a fetch map, the queries would look as below. If you notice, an outer join is performed between, the team and region and the requesting User entity due to entity graph and subgraph.
