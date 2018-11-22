@@ -9,7 +9,7 @@
 
 Considering the below entity relationship. We would be discussing the below points;
 
-![Alt text](markdowns/ERDDiagram.png)
+![Alt text](ERDDiagram.png)
 
 **1**	&nbsp;Advantages & Disadvantages of Eager and lazy Loading<br/>
 **2**	&nbsp;What is Entity Graph and what is Fetch and Load Graph.<br/>
