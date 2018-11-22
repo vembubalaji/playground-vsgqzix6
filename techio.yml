@@ -1,9 +1,11 @@
-title: Hibernate Native SQL
+title: Lazy and Eager loading
 #cover: /playgrounds/cover.png
 plan:
 - title: Lazy and Eager loading
   description: Lazy and Eager loading
   plan:
+  - title: Introduction
+    statement: markdowns/welcome.md
   - title: What is eager and lazy loading?
     statement: markdowns/eagerLazy.md
   - title: Fetch graph and Load graph
